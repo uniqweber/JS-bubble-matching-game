@@ -16,6 +16,59 @@
     <title>Bubble Matching Game</title>
   </head>
   <body>
-    
+    <main>
+      <section>
+        <div
+          class="bg-green-300 flex items-center min-h-screen justify-center p-10"
+        >
+          <div
+            class="max-w-screen-lg bg-white mx-auto rounded-xl h-full w-full shadow-xl overflow-hidden"
+          >
+            <div
+              class="lg:h-24 bg-green-900 grid lg:grid-cols-4 py-6 px-7 items-center"
+            >
+              <div class="text-center lg:text-left">
+                <h1 class="text-white text-xl font-bold">
+                  <span>JS</span>
+                  <span>Bubbler</span>
+                </h1>
+              </div>
+              <div
+                class="flex flex-wrap lg:flex-nowrap items-center justify-center gap-4 py-5 lg:py-0 lg:gap-5 lg:col-span-2"
+              >
+                <div class="text-center">
+                  <h3 class="text-white pb-1.5 text-xs uppercase">Hit</h3>
+                  <h5 id="hit" class="bg-white text-lg rounded-md w-20 py-1">
+                    0
+                  </h5>
+                </div>
+                <div class="text-center order-2 md:order-none">
+                  <h3 class="text-white pb-1.5 text-xs uppercase">Timer</h3>
+                  <h5 class="bg-white text-lg rounded-md w-44 py-1">
+                    00 : <span id="timer">60</span>
+                  </h5>
+                </div>
+                <div class="text-center">
+                  <h3 class="text-white pb-1.5 text-xs uppercase">Score</h3>
+                  <h5 id="score" class="bg-white text-lg rounded-md w-20 py-1">
+                    0
+                  </h5>
+                </div>
+              </div>
+              <div class="lg:text-right text-center">
+                <button id="playGame" class="text-white px-8 py-3 rounded-md">
+                  Play Game
+                </button>
+              </div>
+            </div>
+            <div
+              id="gameBoard"
+              class="h-full bg-white flex flex-wrap justify-center gap-1.5 px-5 lg:px-7 py-6"
+            ></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="bubbleMatch.js"></script>
   </body>
 </html>
